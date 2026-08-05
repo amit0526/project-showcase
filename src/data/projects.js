@@ -1,0 +1,44 @@
+const projects = [
+  {
+    id: 1,
+    title: "Anime Pics Generator",
+    description: "Generate anime images using API.",
+    features: ["Random Anime Images", "Responsive Design", "Fast API Fetch"],
+    tech: ["HTML", "CSS", "JavaScript"],
+    image:"/images/anime-generator.png",
+    live: "https://anime-verse-self.vercel.app/",
+    github: "#",
+  },
+  {
+    id: 2,
+    title: "Digital Clock",
+    description: "Real-time digital clock built with JavaScript.",
+    category: "JavaScript",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/images/clock.png",
+    live: "https://digital-time-blue.vercel.app/",
+    github: "#",
+  },
+  {
+    id: 3,
+    title: "Color Switcher",
+    description: "Change website colors dynamically.",
+    category: "JavaScript",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/images/color.png",
+    live: "https://theme-switcher-two-rust.vercel.app/",
+    github: "#",
+  },
+  {
+    id: 4,
+    title: "Image Slider",
+    description: "Responsive image slider with navigation.",
+    category: "JavaScript",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/images/slider.png",
+    live: "https://snap-slider.vercel.app/",
+    github: "#",
+  },
+];
+
+export default projects;
