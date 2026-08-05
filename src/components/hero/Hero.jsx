@@ -3,14 +3,22 @@ import HeroRight from "./HeroRight";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-indigo-50">
+    <section className="relative overflow-hidden [bg-gradient-to-br from-slate-100 via-indigo-50 to-violet-100]">
       {/* Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(to_right,#6366f1_1px,transparent_1px),linear-gradient(to_bottom,#6366f1_1px,transparent_1px)] bg-[size:60px_60px]" />
+      <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,#6366f1_1px,transparent_1px),linear-gradient(to_bottom,#6366f1_1px,transparent_1px)] [bg-[size:60px_60px]" />
+
+      {/* Mesh Gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,.18),transparent_35%),radial-gradient(circle_at_80%_25%,rgba(168,85,247,.15),transparent_30%),radial-gradient(circle_at_50%_80%,rgba(59,130,246,.12),transparent_35%)]" />
 
       {/* Background Glow */}
-      <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-indigo-500/15 blur-[120px] animate-pulse" />
-      <div className="absolute bottom-0 right-0 h-[450px] w-[450px] rounded-full bg-purple-500/15 blur-[120px]" />
-      <div className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/10 blur-[100px]" />
+      <div className="absolute -top-40 -left-40, h-[420px],w-[420px] rounded-full bg-indigo-500/25 blur-[140px] animate-pulse" />
+
+      <div className="absolute -bottom-24 -right-24 h-[500px], w-[500px], rounded-full bg-purple-500/20 blur-[150px]" />
+
+      <div className="absolute top-1/2 left-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/15 blur-[120px]" />
+
+      {/* Soft White Overlay */}
+      <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 py-28">
         <div className="grid lg:grid-cols-2 items-center gap-16">
@@ -18,6 +26,9 @@ export default function Hero() {
           <HeroRight />
         </div>
       </div>
+
+      {/* Bottom Fade */}
+      <div className="absolute bottom-0 left-0 w-full h-24, [bg-gradient-to-b from-transparent to-white]"></div>
     </section>
   );
 }

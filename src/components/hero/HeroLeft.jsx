@@ -50,7 +50,7 @@ export default function HeroLeft() {
         className="mt-8 text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight"
       >
         Build
-        <span className="block bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-500 bg-clip-text text-transparent">
+        <span className="block bg-gradient-to-r- from-indigo-600 via-purple-600 to-blue-500 bg-clip-text text-transparent">
           Amazing Web Apps
         </span>
       </motion.h1>
@@ -71,7 +71,7 @@ export default function HeroLeft() {
       <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
         <Link
           to="/projects"
-          className="group inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-7 py-4 font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-300"
+          className="group inline-flex items-center gap-2 rounded-2xl [bg-gradient-to-r from-indigo-600 to-purple-600 ] px-7 py-4 font-semibold text-white shadow-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-indigo-300"
         >
           Explore Projects
           <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

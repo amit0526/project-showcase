@@ -19,7 +19,7 @@ export default function HeroRight() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute h-[430px] w-[430px] rounded-full bg-gradient-to-r from-indigo-500/25 via-purple-500/20 to-cyan-400/20 blur-[110px]"
+        className="absolute h-[430px],w-[430px] rounded-full bg-gradient-to-r- from-indigo-500/25 via-purple-500/20 to-cyan-400/20 blur-[110px]"
       />
 
       {/* Floating Circle 1 */}
