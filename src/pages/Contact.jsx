@@ -22,17 +22,36 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="border rounded-xl p-5">
               <h3 className="font-bold text-lg">📧 Email</h3>
-              <p className="text-gray-600">youremail@gmail.com</p>
+              <a
+                href="mailto:amit.anand031020@gmail.com"
+                className="text-gray-600 hover:text-indigo-600 transition duration-300"
+              >
+                amit.anand031020@gmail.com
+              </a>
             </div>
 
             <div className="border rounded-xl p-5">
               <h3 className="font-bold text-lg">💻 GitHub</h3>
-              <p className="text-gray-600">github.com/yourusername</p>
+              <a
+                href="https://github.com/amit0526"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-gray-600 font-medium hover:text-indigo-600 transition-all duration-300 hover:translate-x-1"
+              >
+                View Github Profile →
+              </a>
             </div>
 
             <div className="border rounded-xl p-5">
               <h3 className="font-bold text-lg">💼 LinkedIn</h3>
-              <p className="text-gray-600">linkedin.com/in/yourname</p>
+              <a
+                href="https://linkedin.com/in/amit-anand23"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 text-gray-600 font-medium hover:text-indigo-600 transition-all duration-300 hover:translate-x-1"
+              >
+                View LinkedIn Profile →
+              </a>
             </div>
           </div>
 
