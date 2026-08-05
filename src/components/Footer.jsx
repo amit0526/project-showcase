@@ -28,7 +28,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative mt-16 overflow-hidden [bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-slate-300]">
+    <footer className="relative mt-16 overflow-hidden, bg-linear-to-br from-slate-950 via-slate-900 to-indigo-950 text-slate-300]">
 
       {/* Background Glow */}
       <div className="absolute -top-28 -left-20 h-80 w-80 rounded-full bg-indigo-600/20 blur-3xl animate-pulse"></div>
@@ -52,7 +52,7 @@ export default function Footer() {
           >
             <h2 className="text-3xl font-extrabold tracking-tight text-white">
               Project{" "}
-              <span className="[bg-gradient-to-r from-indigo-400 via-purple-400 to-blue-400 ] bg-clip-text text-transparent">
+              <span className=" bg-linear-to-r from-indigo-400 via-purple-400 to-blue-400  bg-clip-text text-transparent">
                 Showcase
               </span>
             </h2>
@@ -127,7 +127,7 @@ export default function Footer() {
 
               <a
                 href="#"
-                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10"
+                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
                   <FaGithub className="text-lg text-white" />
@@ -138,7 +138,7 @@ export default function Footer() {
 
               <a
                 href="#"
-                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10"
+                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
                   <FaLinkedin className="text-lg text-white" />
@@ -149,7 +149,7 @@ export default function Footer() {
 
               <a
                 href="#"
-                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10"
+                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
                   <FaEnvelope className="text-lg text-white" />
@@ -165,7 +165,7 @@ export default function Footer() {
 
         {/* Divider */}
 
-        <div className="my-14 h-px [bg-gradient-to-r from-transparent via-indigo-500] to-transparent"></div>
+        <div className="my-14 h-px bg-linear-to-r from-transparent via-indigo-500 to-transparent"></div>
 
         {/* Bottom */}
 
@@ -184,7 +184,7 @@ export default function Footer() {
               scale: 0.95,
             }}
             onClick={scrollTop}
-            className="group flex items-center gap-3 rounded-full [bg-gradient-to-r from-indigo-600 to-purple-600 ]px-6 py-3 text-white shadow-xl transition-all"
+            className="group flex items-center gap-3 rounded-full bg-linear-to-r from-indigo-600 to-purple-600 px-6 py-3 text-white shadow-xl transition-all"
           >
             <FaArrowUp className="transition-transform duration-300 group-hover:-translate-y-1" />
             Back to Top
