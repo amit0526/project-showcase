@@ -1,9 +1,10 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   const navLinkClass = ({ isActive }) =>
     isActive
@@ -40,6 +41,13 @@ export default function Navbar() {
             Contact
           </NavLink>
         </div>
+
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="hidden md:flex text-xl text-indigo-600"
+        >
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
 
         {/* Mobile Menu Button */}
         <button

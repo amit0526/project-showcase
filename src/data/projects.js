@@ -4,6 +4,7 @@ const projects = [
     title: "Anime Pics Generator",
     description: "Generate anime images using API.",
     category: "JavaScript",
+    status: "New",
     features: ["Random Anime Images", "Responsive Design", "Fast API Fetch"],
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/anime-generator.png",
