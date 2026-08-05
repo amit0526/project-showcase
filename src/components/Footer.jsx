@@ -29,7 +29,6 @@ export default function Footer() {
 
   return (
     <footer className="relative mt-16 overflow-hidden, bg-linear-to-br from-slate-950 via-slate-900 to-indigo-950 text-slate-300]">
-
       {/* Background Glow */}
       <div className="absolute -top-28 -left-20 h-80 w-80 rounded-full bg-indigo-600/20 blur-3xl animate-pulse"></div>
 
@@ -38,9 +37,7 @@ export default function Footer() {
       <div className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
-
         <div className="grid gap-14 md:grid-cols-3">
-
           {/* Brand */}
 
           <motion.div
@@ -58,9 +55,8 @@ export default function Footer() {
             </h2>
 
             <p className="mt-6 leading-8 text-slate-400">
-              A collection of modern frontend and backend projects built
-              with React, JavaScript, Tailwind CSS and modern web
-              technologies.
+              A collection of modern frontend and backend projects built with
+              React, JavaScript, Tailwind CSS and modern web technologies.
             </p>
           </motion.div>
 
@@ -78,7 +74,6 @@ export default function Footer() {
             </h3>
 
             <div className="flex flex-col gap-4">
-
               <Link
                 to="/"
                 className="transition-all duration-300 hover:translate-x-2 hover:text-indigo-400"
@@ -106,7 +101,6 @@ export default function Footer() {
               >
                 → Contact
               </Link>
-
             </div>
           </motion.div>
 
@@ -119,14 +113,11 @@ export default function Footer() {
             whileInView="show"
             viewport={{ once: true }}
           >
-            <h3 className="mb-6 text-xl font-semibold text-white">
-              Connect
-            </h3>
+            <h3 className="mb-6 text-xl font-semibold text-white">Connect</h3>
 
             <div className="space-y-4">
-
               <a
-                href="#"
+                href="https://github.com/amit0526"
                 className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
@@ -137,7 +128,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/amit-anand23/"
                 className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
@@ -148,7 +139,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="mailto:amit.anand031020@gmail.com"
                 className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
@@ -157,10 +148,8 @@ export default function Footer() {
 
                 <span className="font-medium">Email</span>
               </a>
-
             </div>
           </motion.div>
-
         </div>
 
         {/* Divider */}
@@ -170,9 +159,9 @@ export default function Footer() {
         {/* Bottom */}
 
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} Project Showcase. Crafted with ❤️ using React & Tailwind CSS.
+            © {new Date().getFullYear()} Project Showcase. Crafted with ❤️ using
+            React & Tailwind CSS.
           </p>
 
           <motion.button
@@ -189,9 +178,7 @@ export default function Footer() {
             <FaArrowUp className="transition-transform duration-300 group-hover:-translate-y-1" />
             Back to Top
           </motion.button>
-
         </div>
-
       </div>
     </footer>
   );
