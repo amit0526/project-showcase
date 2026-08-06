@@ -1,10 +1,8 @@
 import { useTheme } from "../components/context/ThemeContext";
-
 import ContactHero from "../components/contact/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import ContactForm from "../components/contact/ContactForm";
 import ResponseBanner from "../components/contact/ResponseBanner";
-
 import Footer from "../components/Footer";
 
 export default function Contact() {

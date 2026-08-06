@@ -8,7 +8,7 @@ export default function ResponseBanner() {
 
   return (
     <section
-      className={`pb-16 md:pb-24 ${
+      className={`py-12 md:py-20 ${
         theme === "dark" ? "bg-slate-950" : "bg-white"
       }`}
     >

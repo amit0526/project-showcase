@@ -27,7 +27,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`relative mt-16 overflow-hidden border-t transition-all duration-300 ${
+      className={`relative mt-0 overflow-hidden border-t transition-all duration-300 ${
         theme === "dark"
           ? "border-white/10 bg-linear-to-br from-slate-950 via-slate-900 to-indigo-950 text-slate-300"
           : "border-slate-200 bg-linear-to-br from-slate-50 via-white to-indigo-50 text-slate-700"
