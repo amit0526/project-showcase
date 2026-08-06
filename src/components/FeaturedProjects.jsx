@@ -6,7 +6,7 @@ export default function FeaturedProjects() {
   const featured = projects.slice(0, 3);
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16">
+    <section className="max-w-7xl mx-auto px-6 pt-16 pb-32">
       <div className="flex items-center justify-between mb-10">
         <h2 className="text-4xl font-bold">Featured Projects</h2>
 

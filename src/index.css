@@ -2,6 +2,17 @@
 
 @import "tailwindcss";
 
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+
+
 *{
     font-family:'Poppins',sans-serif;
 }
+
