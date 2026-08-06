@@ -31,7 +31,7 @@ export default function ContactInfo() {
             }`}
           >
             {/* Icon */}
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 text-white shadow-lg"> 
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
               <Icon size={24} />
             </div>
 
@@ -44,12 +44,9 @@ export default function ContactInfo() {
               >
                 {item.title}
               </h3>
-
               <p
-                className={`group flex flex-col items-start gap-4 sm:flex-row sm:items-center rounded-3xl border p-5 sm:p-6 shadow-lg transition-all duration-300 ${
-                 theme === "dark"
-              ? "border-slate-800 bg-slate-900 hover:border-indigo-500"
-    :           "border-slate-200 bg-white hover:border-indigo-400"
+                className={`mt-1 break-all text-sm sm:text-base ${
+                  theme === "dark" ? "text-slate-400" : "text-slate-600"
                 }`}
               >
                 {item.value}
