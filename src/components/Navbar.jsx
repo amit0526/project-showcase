@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,26 +13,34 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-slate-200 shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <nav className="sticky top-0 z-50 border-b border-white/20 bg-white/70 backdrop-blur-2xl shadow-lg">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
         {/* Logo */}
+
         <Link
           to="/"
           onClick={() => setMenuOpen(false)}
-          className="text-2xl font-extrabold tracking-tight text-slate-900"
+          className="text-2xl font-black tracking-tight"
         >
-          Project
-          <span className="text-indigo-600"> Showcase</span>
+          <span className="text-slate-900">Project</span>
+          <span className="bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            {" "}
+            Showcase
+          </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop Menu */}
+
+        <div className="hidden items-center gap-8 md:flex">
           <NavLink to="/" className={navLinkClass}>
             {({ isActive }) => (
               <span className="relative">
                 Home
                 {isActive && (
-                  <span className="absolute -bottom-2 left-0 h-0.5 w-full bg-indigo-600 rounded-full"></span>
+                  <motion.span
+                    layoutId="nav"
+                    className="absolute -bottom-2 left-0 h-0.5 w-full rounded-full bg-indigo-600"
+                  />
                 )}
               </span>
             )}
@@ -42,7 +51,10 @@ export default function Navbar() {
               <span className="relative">
                 Projects
                 {isActive && (
-                  <span className="absolute -bottom-2 left-0 h-0.5 w-full bg-indigo-600 rounded-full"></span>
+                  <motion.span
+                    layoutId="nav"
+                    className="absolute -bottom-2 left-0 h-0.5 w-full rounded-full bg-indigo-600"
+                  />
                 )}
               </span>
             )}
@@ -53,7 +65,10 @@ export default function Navbar() {
               <span className="relative">
                 About
                 {isActive && (
-                  <span className="absolute -bottom-2 left-0 h-0.5 w-full bg-indigo-600 rounded-full"></span>
+                  <motion.span
+                    layoutId="nav"
+                    className="absolute -bottom-2 left-0 h-0.5 w-full rounded-full bg-indigo-600"
+                  />
                 )}
               </span>
             )}
@@ -64,19 +79,22 @@ export default function Navbar() {
               <span className="relative">
                 Contact
                 {isActive && (
-                  <span className="absolute -bottom-2 left-0 h-0.5 w-full bg-indigo-600 rounded-full"></span>
+                  <motion.span
+                    layoutId="nav"
+                    className="absolute -bottom-2 left-0 h-0.5 w-full rounded-full bg-indigo-600"
+                  />
                 )}
               </span>
             )}
           </NavLink>
         </div>
 
-        {/* Right Side */}
+        {/* Right */}
+
         <div className="flex items-center gap-3">
-          {/* Dark Mode Button */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="hidden md:flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 bg-white hover:bg-slate-100 transition-all duration-300 shadow-sm"
+            className="hidden h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md transition hover:scale-105 md:flex"
           >
             {darkMode ? (
               <FaSun className="text-amber-500" />
@@ -85,58 +103,66 @@ export default function Navbar() {
             )}
           </button>
 
-          {/* Mobile Menu */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-slate-200 bg-white shadow-sm"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md md:hidden"
           >
             {menuOpen ? (
-              <FaTimes className="text-xl text-slate-700" />
+              <FaTimes className="text-slate-700" />
             ) : (
-              <FaBars className="text-xl text-slate-700" />
+              <FaBars className="text-slate-700" />
             )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      {menuOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-5 flex flex-col gap-5">
-            <NavLink
-              to="/"
-              className={navLinkClass}
-              onClick={() => setMenuOpen(false)}
-            >
-              Home
-            </NavLink>
+      {/* Mobile Menu */}
 
-            <NavLink
-              to="/projects"
-              className={navLinkClass}
-              onClick={() => setMenuOpen(false)}
-            >
-              Projects
-            </NavLink>
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.25 }}
+            className="border-t border-slate-200 bg-white/90 backdrop-blur-xl md:hidden"
+          >
+            <div className="flex flex-col gap-5 px-6 py-6">
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpen(false)}
+                className={navLinkClass}
+              >
+                Home
+              </NavLink>
 
-            <NavLink
-              to="/about"
-              className={navLinkClass}
-              onClick={() => setMenuOpen(false)}
-            >
-              About
-            </NavLink>
+              <NavLink
+                to="/projects"
+                onClick={() => setMenuOpen(false)}
+                className={navLinkClass}
+              >
+                Projects
+              </NavLink>
 
-            <NavLink
-              to="/contact"
-              className={navLinkClass}
-              onClick={() => setMenuOpen(false)}
-            >
-              Contact
-            </NavLink>
-          </div>
-        </div>
-      )}
+              <NavLink
+                to="/about"
+                onClick={() => setMenuOpen(false)}
+                className={navLinkClass}
+              >
+                About
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                onClick={() => setMenuOpen(false)}
+                className={navLinkClass}
+              >
+                Contact
+              </NavLink>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }

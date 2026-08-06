@@ -73,7 +73,7 @@ export default function Footer() {
               Quick Links
             </h3>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 text-white">
               <Link
                 to="/"
                 className="transition-all duration-300 hover:translate-x-2 hover:text-indigo-400"
@@ -115,10 +115,10 @@ export default function Footer() {
           >
             <h3 className="mb-6 text-xl font-semibold text-white">Connect</h3>
 
-            <div className="space-y-4">
+            <div className="space-y-4 text-white">
               <a
                 href="https://github.com/amit0526"
-                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
+                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 "
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
                   <FaGithub className="text-lg text-white" />
@@ -129,7 +129,7 @@ export default function Footer() {
 
               <a
                 href="https://www.linkedin.com/in/amit-anand23/"
-                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
+                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10"
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
                   <FaLinkedin className="text-lg text-white" />
@@ -140,7 +140,7 @@ export default function Footer() {
 
               <a
                 href="mailto:amit.anand031020@gmail.com"
-                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 text-white"
+                className="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-white/5 p-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500 hover:bg-indigo-500/10 "
               >
                 <div className="rounded-xl bg-slate-800 p-3 transition group-hover:bg-indigo-600">
                   <FaEnvelope className="text-lg text-white" />
