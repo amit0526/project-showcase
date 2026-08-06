@@ -189,6 +189,36 @@ export default function Navbar() {
               >
                 Contact
               </NavLink>
+
+              {/* Divider */}
+              <div
+                className={`my-2 h-px ${
+                  theme === "dark" ? "bg-slate-700" : "bg-slate-200"
+                }`}
+              />
+
+              {/* Mobile Theme Toggle */}
+              <button
+                onClick={() => {
+                  toggleTheme();
+                  setMenuOpen(false);
+                }}
+                className={`flex items-center justify-between rounded-xl border px-4 py-3 transition-all duration-300 ${
+                  theme === "dark"
+                    ? "border-slate-700 bg-slate-800 text-white"
+                    : "border-slate-200 bg-white text-slate-700"
+                }`}
+              >
+                <span className="font-medium">
+                  {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                </span>
+
+                {theme === "dark" ? (
+                  <FaSun className="text-amber-400" />
+                ) : (
+                  <FaMoon className="text-slate-700" />
+                )}
+              </button>
             </div>
           </motion.div>
         )}
