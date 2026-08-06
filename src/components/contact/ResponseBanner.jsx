@@ -8,30 +8,31 @@ export default function ResponseBanner() {
 
   return (
     <section
-      className={`pb-24 ${theme === "dark" ? "bg-slate-950" : "bg-white"}`}
+      className={`pb-16 md:pb-24 ${
+        theme === "dark" ? "bg-slate-950" : "bg-white"
+      }`}
     >
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className={`overflow-hidden rounded-4xl border p-10 shadow-xl ${
+          className={`overflow-hidden rounded-3xl border shadow-xl ${
             theme === "dark"
               ? "border-slate-800 bg-linear-to-r from-slate-900 via-slate-900 to-indigo-950"
               : "border-slate-200 bg-linear-to-r from-indigo-50 via-white to-purple-50"
           }`}
         >
-          <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div className="grid gap-12 p-6 md:p-10 lg:grid-cols-2 lg:items-center">
             {/* Left */}
-
-            <div>
+            <div className="text-center lg:text-left">
               <span className="inline-flex rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-600">
                 🚀 Let's Connect
               </span>
 
               <h2
-                className={`mt-6 text-4xl font-black ${
+                className={`mt-6 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl ${
                   theme === "dark" ? "text-white" : "text-slate-900"
                 }`}
               >
@@ -39,7 +40,7 @@ export default function ResponseBanner() {
               </h2>
 
               <p
-                className={`mt-5 text-lg leading-8 ${
+                className={`mt-5 text-base leading-7 sm:text-lg sm:leading-8 ${
                   theme === "dark" ? "text-slate-400" : "text-slate-600"
                 }`}
               >
@@ -57,17 +58,17 @@ export default function ResponseBanner() {
             </div>
 
             {/* Right */}
-
-            <div className="grid gap-5 sm:grid-cols-3">
+            <div className="grid gap-5 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+              {/* Card 1 */}
               <div
-                className={`rounded-2xl p-6 text-center ${
+                className={`rounded-2xl p-6 text-center shadow-md ${
                   theme === "dark" ? "bg-slate-800" : "bg-white"
                 }`}
               >
                 <FaClock className="mx-auto text-3xl text-indigo-600" />
 
                 <h3
-                  className={`mt-4 font-bold ${
+                  className={`mt-4 text-xl font-bold ${
                     theme === "dark" ? "text-white" : "text-slate-900"
                   }`}
                 >
@@ -83,15 +84,16 @@ export default function ResponseBanner() {
                 </p>
               </div>
 
+              {/* Card 2 */}
               <div
-                className={`rounded-2xl p-6 text-center ${
+                className={`rounded-2xl p-6 text-center shadow-md ${
                   theme === "dark" ? "bg-slate-800" : "bg-white"
                 }`}
               >
                 <FaCode className="mx-auto text-3xl text-indigo-600" />
 
                 <h3
-                  className={`mt-4 font-bold ${
+                  className={`mt-4 text-xl font-bold ${
                     theme === "dark" ? "text-white" : "text-slate-900"
                   }`}
                 >
@@ -107,15 +109,16 @@ export default function ResponseBanner() {
                 </p>
               </div>
 
+              {/* Card 3 */}
               <div
-                className={`rounded-2xl p-6 text-center ${
+                className={`rounded-2xl p-6 text-center shadow-md ${
                   theme === "dark" ? "bg-slate-800" : "bg-white"
                 }`}
               >
                 <FaHandshake className="mx-auto text-3xl text-indigo-600" />
 
                 <h3
-                  className={`mt-4 font-bold ${
+                  className={`mt-4 text-xl font-bold ${
                     theme === "dark" ? "text-white" : "text-slate-900"
                   }`}
                 >
@@ -137,3 +140,4 @@ export default function ResponseBanner() {
     </section>
   );
 }
+

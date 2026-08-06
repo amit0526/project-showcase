@@ -31,7 +31,7 @@ export default function ContactInfo() {
             }`}
           >
             {/* Icon */}
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
               <Icon size={24} />
             </div>
 
@@ -46,7 +46,7 @@ export default function ContactInfo() {
               </h3>
 
               <p
-                className={`mt-1 break-words text-sm sm:text-base ${
+                className={`mt-1 wrap-break-word text-sm sm:text-base ${
                   theme === "dark" ? "text-slate-400" : "text-slate-600"
                 }`}
               >
