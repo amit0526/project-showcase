@@ -2,23 +2,26 @@ const projects = [
   {
     id: 1,
     title: "Developer Portfolio",
-    description: "A fun number guessing game with score tracking and hints.",
-    category: "JavaScript",
+    description:
+      "A modern developer portfolio showcasing skills, featured projects, responsive layouts, and smooth animations.",
+    category: "React",
     status: "Live",
-    features: ["Random Number Generation", "Score System", "Responsive Design"],
-    tech: ["HTML", "CSS", "JavaScript"],
+    features: ["Responsive Design", "Dark Mode", "Smooth Animations"],
+    tech: ["React", "Tailwind CSS", "JavaScript"],
     image: "/images/amit-anand.png",
     live: "https://amit-anand-dev.vercel.app/",
     github: "#",
   },
+
   {
     id: 2,
     title: "Anime Pics Generator",
-    description: "A fun number guessing game with score tracking and hints.",
-    category: "JavaScript",
+    description:
+      "Generate random anime images using a public API with instant loading and a clean responsive interface.",
+    category: "API",
     status: "New",
-    features: ["Random Number Generation", "Score System", "Responsive Design"],
-    tech: ["HTML", "CSS", "JavaScript"],
+    features: ["API Integration", "Random Anime Images", "Responsive Design"],
+    tech: ["HTML", "CSS", "JavaScript", "API"],
     image: "/images/anime-generator.png",
     live: "https://anime-verse-self.vercel.app/",
     github: "#",
@@ -27,7 +30,8 @@ const projects = [
   {
     id: 3,
     title: "Number Ninja",
-    description: "A fun number guessing game with score tracking and hints.",
+    description:
+      "A fun number guessing game featuring score tracking, hints, and interactive gameplay.",
     category: "JavaScript",
     status: "Completed",
     features: ["Random Number Generation", "Score System", "Responsive Design"],
@@ -40,7 +44,8 @@ const projects = [
   {
     id: 4,
     title: "Neo Calculator",
-    description: "A modern calculator with basic arithmetic operations.",
+    description:
+      "A sleek calculator supporting arithmetic operations with a modern responsive interface.",
     category: "JavaScript",
     status: "Completed",
     features: ["Basic Arithmetic", "Responsive Layout", "Clean UI"],
@@ -53,10 +58,11 @@ const projects = [
   {
     id: 5,
     title: "Coffee Hub",
-    description: "A modern coffee shop landing page with attractive UI.",
+    description:
+      "A modern coffee shop landing page with responsive layouts and elegant user experience.",
     category: "Frontend",
     status: "Completed",
-    features: ["Responsive Design", "Modern Landing Page", "Smooth Layout"],
+    features: ["Responsive Design", "Landing Page", "Smooth Layout"],
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/coffe-hub.png",
     live: "https://coffee-hub-psi.vercel.app/",
@@ -66,7 +72,8 @@ const projects = [
   {
     id: 6,
     title: "KeyCode Explorer",
-    description: "Displays keyboard key codes and event information instantly.",
+    description:
+      "Display keyboard key codes and event details instantly with a clean interactive interface.",
     category: "JavaScript",
     status: "Completed",
     features: ["Keyboard Events", "Key Code Display", "Responsive Design"],
@@ -79,7 +86,8 @@ const projects = [
   {
     id: 7,
     title: "BMI Calculator",
-    description: "Calculate Body Mass Index with instant health results.",
+    description:
+      "Calculate Body Mass Index instantly with health status results and responsive design.",
     category: "JavaScript",
     status: "Completed",
     features: ["BMI Calculation", "Instant Results", "Responsive Design"],
@@ -93,7 +101,7 @@ const projects = [
     id: 8,
     title: "Digital Clock",
     description:
-      "A live digital clock displaying real-time hours, minutes and seconds.",
+      "A live digital clock displaying real-time hours, minutes, and seconds with a minimal UI.",
     category: "JavaScript",
     status: "Completed",
     features: ["Live Time", "Real-time Updates", "Responsive Design"],
@@ -106,7 +114,8 @@ const projects = [
   {
     id: 9,
     title: "Snap Slider",
-    description: "An interactive image slider with smooth navigation effects.",
+    description:
+      "An interactive image slider featuring smooth animations and responsive navigation controls.",
     category: "JavaScript",
     status: "Completed",
     features: ["Image Slider", "Smooth Animation", "Responsive Design"],
@@ -119,10 +128,11 @@ const projects = [
   {
     id: 10,
     title: "Theme Switcher",
-    description: "Switch between different color themes with a single click.",
+    description:
+      "Switch between multiple color themes instantly with persistent user preferences.",
     category: "JavaScript",
     status: "Completed",
-    features: ["Multiple Themes", "Instant Theme Change", "Responsive Design"],
+    features: ["Multiple Themes", "Theme Persistence", "Responsive Design"],
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/color-switcher.png",
     live: "https://theme-switcher-two-rust.vercel.app/",
