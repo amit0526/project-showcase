@@ -1,20 +1,17 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import { useTheme } from "../components/context/ThemeContext";
 
 import ContactHero from "../components/contact/ContactHero";
 import ContactInfo from "../components/contact/ContactInfo";
 import ContactForm from "../components/contact/ContactForm";
 import ResponseBanner from "../components/contact/ResponseBanner";
 
-import { useTheme } from "../components/context/ThemeContext";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   const { theme } = useTheme();
 
   return (
     <>
-      <Navbar />
-
       <main
         className={`min-h-screen transition-colors duration-300 ${
           theme === "dark" ? "bg-slate-950" : "bg-white"
@@ -24,12 +21,10 @@ export default function Contact() {
         <ContactHero />
 
         {/* Contact Section */}
-        <section className="pb-24">
-          <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-2">
-            {/* Left */}
+        <section className="pb-20 sm:pb-24">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14">
             <ContactInfo />
 
-            {/* Right */}
             <ContactForm />
           </div>
         </section>

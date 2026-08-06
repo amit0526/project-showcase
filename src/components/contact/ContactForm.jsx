@@ -10,7 +10,6 @@ export default function ContactForm() {
   const form = useRef();
 
   const [loading, setLoading] = useState(false);
-
   const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
@@ -28,14 +27,11 @@ export default function ContactForm() {
       .then(() => {
         setStatus("success");
         setLoading(false);
-
         form.current.reset();
       })
       .catch((error) => {
         console.log(error);
-
         setStatus("error");
-
         setLoading(false);
       });
   };
@@ -46,14 +42,14 @@ export default function ContactForm() {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className={`rounded-3xl border p-8 shadow-xl ${
+      className={`w-full rounded-3xl border p-5 shadow-xl sm:p-6 lg:p-8 ${
         theme === "dark"
           ? "border-slate-800 bg-slate-900"
           : "border-slate-200 bg-white"
       }`}
     >
       <h2
-        className={`text-3xl font-bold ${
+        className={`text-2xl font-bold sm:text-3xl ${
           theme === "dark" ? "text-white" : "text-slate-900"
         }`}
       >
@@ -61,14 +57,14 @@ export default function ContactForm() {
       </h2>
 
       <p
-        className={`mt-3 ${
+        className={`mt-3 text-sm leading-7 sm:text-base ${
           theme === "dark" ? "text-slate-400" : "text-slate-600"
         }`}
       >
         Fill out the form below and I'll get back to you as soon as possible.
       </p>
 
-      <form ref={form} onSubmit={sendEmail} className="mt-8 space-y-6">
+      <form ref={form} onSubmit={sendEmail} className="mt-6 space-y-5">
         <input
           type="hidden"
           name="time"
@@ -77,10 +73,11 @@ export default function ContactForm() {
             timeStyle: "short",
           })}
         />
+
         {/* Name */}
         <div>
           <label
-            className={`mb-2 block font-medium ${
+            className={`mb-2 block text-sm font-medium sm:text-base ${
               theme === "dark" ? "text-slate-300" : "text-slate-700"
             }`}
           >
@@ -92,7 +89,7 @@ export default function ContactForm() {
             type="text"
             required
             placeholder="Enter your name"
-            className={`w-full rounded-2xl border px-5 py-4 outline-none transition-all focus:border-indigo-500 ${
+            className={`w-full rounded-2xl border px-4 py-3 text-sm outline-none transition-all focus:border-indigo-500 sm:px-5 sm:py-4 sm:text-base ${
               theme === "dark"
                 ? "border-slate-700 bg-slate-800 text-white"
                 : "border-slate-300 bg-white text-slate-900"
@@ -103,7 +100,7 @@ export default function ContactForm() {
         {/* Email */}
         <div>
           <label
-            className={`mb-2 block font-medium ${
+            className={`mb-2 block text-sm font-medium sm:text-base ${
               theme === "dark" ? "text-slate-300" : "text-slate-700"
             }`}
           >
@@ -112,10 +109,10 @@ export default function ContactForm() {
 
           <input
             name="from_email"
-            required
             type="email"
+            required
             placeholder="Enter your email"
-            className={`w-full rounded-2xl border px-5 py-4 outline-none transition-all focus:border-indigo-500 ${
+            className={`w-full rounded-2xl border px-4 py-3 text-sm outline-none transition-all focus:border-indigo-500 sm:px-5 sm:py-4 sm:text-base ${
               theme === "dark"
                 ? "border-slate-700 bg-slate-800 text-white"
                 : "border-slate-300 bg-white text-slate-900"
@@ -126,7 +123,7 @@ export default function ContactForm() {
         {/* Subject */}
         <div>
           <label
-            className={`mb-2 block font-medium ${
+            className={`mb-2 block text-sm font-medium sm:text-base ${
               theme === "dark" ? "text-slate-300" : "text-slate-700"
             }`}
           >
@@ -135,10 +132,10 @@ export default function ContactForm() {
 
           <input
             name="subject"
-            required
             type="text"
+            required
             placeholder="Message subject"
-            className={`w-full rounded-2xl border px-5 py-4 outline-none transition-all focus:border-indigo-500 ${
+            className={`w-full rounded-2xl border px-4 py-3 text-sm outline-none transition-all focus:border-indigo-500 sm:px-5 sm:py-4 sm:text-base ${
               theme === "dark"
                 ? "border-slate-700 bg-slate-800 text-white"
                 : "border-slate-300 bg-white text-slate-900"
@@ -149,7 +146,7 @@ export default function ContactForm() {
         {/* Message */}
         <div>
           <label
-            className={`mb-2 block font-medium ${
+            className={`mb-2 block text-sm font-medium sm:text-base ${
               theme === "dark" ? "text-slate-300" : "text-slate-700"
             }`}
           >
@@ -159,9 +156,9 @@ export default function ContactForm() {
           <textarea
             name="message"
             required
-            rows={6}
+            rows={5}
             placeholder="Write your message..."
-            className={`w-full rounded-2xl border px-5 py-4 outline-none transition-all resize-none focus:border-indigo-500 ${
+            className={`w-full resize-none rounded-2xl border px-4 py-3 text-sm outline-none transition-all focus:border-indigo-500 sm:px-5 sm:py-4 sm:text-base ${
               theme === "dark"
                 ? "border-slate-700 bg-slate-800 text-white"
                 : "border-slate-300 bg-white text-slate-900"
@@ -170,23 +167,23 @@ export default function ContactForm() {
         </div>
 
         {/* Button */}
-
         <button
           type="submit"
           disabled={loading}
-          className="flex w-full items-center justify-center gap-3 rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-70"
+          className="flex w-full items-center justify-center gap-3 rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-70 sm:py-4 sm:text-base"
         >
           <FaPaperPlane />
           {loading ? "Sending..." : "Send Message"}
         </button>
+
         {status === "success" && (
-          <p className="rounded-xl bg-green-100 p-4 text-center font-medium text-green-700">
+          <p className="rounded-xl bg-green-100 p-4 text-center text-sm font-medium text-green-700 sm:text-base">
             ✅ Message sent successfully! I'll get back to you soon.
           </p>
         )}
 
         {status === "error" && (
-          <p className="rounded-xl bg-red-100 p-4 text-center font-medium text-red-700">
+          <p className="rounded-xl bg-red-100 p-4 text-center text-sm font-medium text-red-700 sm:text-base">
             ❌ Something went wrong. Please try again.
           </p>
         )}
