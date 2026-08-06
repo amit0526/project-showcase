@@ -33,7 +33,7 @@ export default function HeroLeft() {
       variants={container}
       initial="hidden"
       animate="show"
-      className="flex flex-col"
+      className="flex flex-col w-full"
     >
       {/* Badge */}
 
@@ -47,7 +47,7 @@ export default function HeroLeft() {
 
       <motion.h1
         variants={item}
-        className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight text-slate-900"
+        className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight wrap-break-word text-slate-900"
       >
         Build
         <span className="block bg-linear-to-r from-indigo-600 via-purple-600 to-blue-500 bg-clip-text text-transparent">
@@ -68,10 +68,13 @@ export default function HeroLeft() {
 
       {/* Buttons */}
 
-      <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
+      <motion.div
+        variants={item}
+        className="mt-8 flex flex-col gap-3 sm:flex-row"
+      >
         <Link
           to="/projects"
-          className="group inline-flex items-center gap-2 rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 px-7 py-4 font-semibold text-white shadow-[0_15px_35px_rgba(79,70,229,.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(79,70,229,.45)]"
+          className="group inline-flex items-center gap-2 rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 px-5 py-3 font-semibold text-white shadow-[0_15px_35px_rgba(79,70,229,.35)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(79,70,229,.45)]"
         >
           Explore Projects
           <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -87,7 +90,10 @@ export default function HeroLeft() {
 
       {/* Tech Stack */}
 
-      <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
+      <motion.div
+        variants={item}
+        className="mt-8 flex flex-wrap justify-center lg:justify-start gap-3"
+      >
         <Tech icon={<FaReact className="text-cyan-500" />} text="React" />
         <Tech icon={<FaJs className="text-yellow-400" />} text="JavaScript" />
         <Tech
@@ -99,17 +105,12 @@ export default function HeroLeft() {
 
       {/* Stats */}
 
-      <motion.div
-        variants={item}
-        className="mt-14 grid grid-cols-2 sm:grid-cols-3 gap-5"
-      >
+      <motion.div variants={item} className="mt-10 grid grid-cols-2 sm:grid-cols-3 gap-4">
         <Stat number="10+" label="Projects" />
-
         <Stat number="8+" label="Technologies" />
+        <Stat number="100%" label="Responsive" />
 
-        <div className="col-span-2 sm:col-span-1">
-          <Stat number="100%" label="Responsive" />
-        </div>
+        
       </motion.div>
     </motion.div>
   );
@@ -140,7 +141,7 @@ function Stat({ number, label }) {
         scale: 1.04,
       }}
       transition={{ duration: 0.25 }}
-      className="rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-6 text-center shadow-xl"
+      className="rounded-3xl border border-white/60 bg-white/80 backdrop-blur-xl p-4 sm:p-6 text-center shadow-xl"
     >
       <h2 className="text-3xl sm:text-4xl font-black bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
         {number}

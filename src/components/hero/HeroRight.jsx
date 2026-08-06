@@ -6,7 +6,7 @@ export default function HeroRight() {
       initial={{ opacity: 0, scale: 0.9, x: 40 }}
       animate={{ opacity: 1, scale: 1, x: 0 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
-      className="relative flex justify-center items-center"
+      className="relative flex justify-center items-center -mt-6 lg:mt-0"
     >
       {/* Main Glow */}
       <motion.div
@@ -19,7 +19,7 @@ export default function HeroRight() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute h-[430px],w-[430px] rounded-full bg-gradient-to-r- from-indigo-500/25 via-purple-500/20 to-cyan-400/20 blur-[110px]"
+        className="absolute h-430px w-430px rounded-full bg-linear-to-r- from-indigo-500/25 via-purple-500/20 to-cyan-400/20 blur-[110px]"
       />
 
       {/* Floating Circle 1 */}
@@ -33,7 +33,7 @@ export default function HeroRight() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-8 left-8 h-24 w-24 rounded-full border border-white/40 bg-white/20 backdrop-blur-xl shadow-xl"
+        className="hidden md:block absolute top-8 left-8 h-24 w-24 rounded-full border border-white/40 bg-white/20 backdrop-blur-xl shadow-xl"
       />
 
       {/* Floating Circle 2 */}
@@ -47,7 +47,7 @@ export default function HeroRight() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-10 right-6 h-20 w-20 rounded-full border border-white/40 bg-indigo-100/30 backdrop-blur-xl shadow-xl"
+        className="hidden md:block absolute bottom-10 right-6 h-20 w-20 rounded-full border border-white/40 bg-indigo-100/30 backdrop-blur-xl shadow-xl"
       />
 
       {/* Floating Circle 3 */}
@@ -60,7 +60,7 @@ export default function HeroRight() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/2 -right-4 h-14 w-14 rounded-full bg-purple-400/30 blur-md"
+        className="hidden md:block absolute top-1/2 -right-4 h-14 w-14 rounded-full bg-purple-400/30 blur-md"
       />
 
       {/* Hero Image */}
@@ -83,7 +83,7 @@ export default function HeroRight() {
             ease: "easeInOut",
           },
         }}
-        className="relative z-10 w-full max-w-2xl drop-shadow-[0_45px_90px_rgba(79,70,229,.35)]"
+        className="relative z-10 w-full max-w-70 sm:max-w-md lg:max-w-xl xl:max-w-2xl drop-shadow-[0_45px_90px_rgba(79,70,229,.35)]"
       />
 
       {/* Bottom Glow */}
