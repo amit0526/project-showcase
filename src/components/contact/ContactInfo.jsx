@@ -34,7 +34,7 @@ export default function ContactInfo() {
           >
             {/* Icon */}
 
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
               <Icon size={24} />
             </div>
 

@@ -16,10 +16,10 @@ export default function ResponseBanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className={`overflow-hidden rounded-[32px] border p-10 shadow-xl ${
+          className={`overflow-hidden rounded-4xl border p-10 shadow-xl ${
             theme === "dark"
-              ? "border-slate-800 bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950"
-              : "border-slate-200 bg-gradient-to-r from-indigo-50 via-white to-purple-50"
+              ? "border-slate-800 bg-linear-to-r from-slate-900 via-slate-900 to-indigo-950"
+              : "border-slate-200 bg-linear-to-r from-indigo-50 via-white to-purple-50"
           }`}
         >
           <div className="grid items-center gap-10 lg:grid-cols-2">
@@ -49,7 +49,7 @@ export default function ResponseBanner() {
 
               <Link
                 to="/projects"
-                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-7 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 px-7 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               >
                 Explore Projects
                 <FaArrowRight />

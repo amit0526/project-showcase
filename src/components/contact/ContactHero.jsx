@@ -37,7 +37,7 @@ export default function ContactHero() {
             }`}
           >
             Let's Build Something
-            <span className="block bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-indigo-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Amazing Together
             </span>
           </h1>

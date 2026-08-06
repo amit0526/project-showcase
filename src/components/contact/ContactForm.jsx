@@ -121,7 +121,7 @@ export default function ContactForm() {
         {/* Button */}
         <button
           type="submit"
-          className="flex w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          className="flex w-full items-center justify-center gap-3 rounded-2xl bg-linear-to-r from-indigo-600 to-purple-600 px-6 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
         >
           <FaPaperPlane />
           Send Message
