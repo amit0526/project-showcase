@@ -33,7 +33,7 @@ export default function StatsSection() {
                   : "border-slate-200 bg-white hover:border-indigo-400"
               }`}
             >
-              <h2 className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent">
+              <h2 className="bg-linear-to-r from-indigo-500 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent">
                 {item.number}
               </h2>
 
