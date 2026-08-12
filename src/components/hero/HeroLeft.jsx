@@ -106,7 +106,7 @@ export default function HeroLeft() {
       {/* Stats */}
 
       <motion.div variants={item} className="mt-12 grid grid-cols-2 sm:grid-col-3 gap-3">
-        <Stat number="10+" label="Projects" />
+        <Stat number="11+" label="Projects" />
         <Stat number="8+" label="Tech" />
         <Stat number="100%" label="Responsive" />
       </motion.div>
