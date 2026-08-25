@@ -5,7 +5,7 @@ const projects = [
     description:
       "A full-stack admin dashboard for managing users, monitoring system status, and configuring application settings with a responsive modern interface.",
     category: "Full Stack",
-    status: "Completed",
+    status: "New",
     features: [
       "Admin Login",
       "User Management",
@@ -18,7 +18,7 @@ const projects = [
       "Responsive Design",
     ],
     tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
-    images: ["/images/tech-flow-login.png", "/images/tech-flow-dashboard.png"],
+    images: "/images/tech-flow-login.png",
     live: "https://tech-flow-steel.vercel.app/",
     github: "https://github.com/amit0526/TechFlow",
   },
