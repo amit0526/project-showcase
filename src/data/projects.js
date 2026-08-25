@@ -1,8 +1,33 @@
 const projects = [
   {
     id: 1,
+    title: "TechFlow Admin Panel",
+    description:
+      "A full-stack admin dashboard for managing users, monitoring system status, and configuring application settings with a responsive modern interface.",
+    category: "Full Stack",
+    status: "Completed",
+    features: [
+      "Admin Login",
+      "User Management",
+      "Add, Edit & Delete Users",
+      "User Search & Pagination",
+      "Dashboard Analytics",
+      "Application Settings",
+      "PostgreSQL Database",
+      "Email Notifications",
+      "Responsive Design",
+    ],
+    tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
+    images: ["/images/tech-flow-login.png", "/images/tech-flow-dashboard.png"],
+    live: "https://tech-flow-steel.vercel.app/",
+    github: "https://github.com/amit0526/TechFlow",
+  },
+
+  {
+    id: 2,
     title: "Snake Game",
-    description:"A responsive classic Snake Game built with HTML, CSS, and JavaScript featuring dynamic snake growth, food generation, collision detection, real-time scoring, a game timer, and persistent high scores.",
+    description:
+      "A responsive classic Snake Game built with HTML, CSS, and JavaScript featuring dynamic snake growth, food generation, collision detection, real-time scoring, a game timer, and persistent high scores.",
     category: "JavaScript",
     status: "Live",
     features: [
@@ -14,15 +39,15 @@ const projects = [
       "Keyboard Controls",
       "Mobile Touch & Swipe Controls",
     ],
-   tech: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-   image: "/images/snake-game.png",
-   live: "https://snake-game-weld-eight.vercel.app/",
-   github: "https://github.com/amit0526/java-script-projects/tree/main/13-snake-game",
-   
+    tech: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+    image: "/images/snake-game.png",
+    live: "https://snake-game-weld-eight.vercel.app/",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/13-snake-game",
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Developer Portfolio",
     description:
       "A modern developer portfolio showcasing skills, featured projects, responsive layouts, and smooth animations.",
@@ -32,11 +57,12 @@ const projects = [
     tech: ["React", "Tailwind CSS", "JavaScript"],
     image: "/images/amit-anand.png",
     live: "https://amit-anand-dev.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/10-protfolio",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/10-protfolio",
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Anime Pics Generator",
     description:
       "Generate random anime images using a public API with instant loading and a clean responsive interface.",
@@ -46,11 +72,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "API"],
     image: "/images/anime-generator.png",
     live: "https://anime-verse-self.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/6-Anime-Pics-Generator",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/6-Anime-Pics-Generator",
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Number Ninja",
     description:
       "A fun number guessing game featuring score tracking, hints, and interactive gameplay.",
@@ -60,11 +87,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/gusseing-number.png",
     live: "https://number-ninja-five.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/4-GuessTheNumber",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/4-GuessTheNumber",
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Neo Calculator",
     description:
       "A sleek calculator supporting arithmetic operations with a modern responsive interface.",
@@ -74,11 +102,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/calculator.png",
     live: "https://neocalcapp.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/7-Calculator",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/7-Calculator",
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Coffee Hub",
     description:
       "A modern coffee shop landing page with responsive layouts and elegant user experience.",
@@ -88,11 +117,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/coffe-hub.png",
     live: "https://coffee-hub-psi.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/12-coffee-hub",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/12-coffee-hub",
   },
 
   {
-    id: 7,
+    id: 8,
     title: "KeyCode Explorer",
     description:
       "Display keyboard key codes and event details instantly with a clean interactive interface.",
@@ -102,11 +132,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/key-code.png",
     live: "https://keycode-explorer.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/5-keyboard",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/5-keyboard",
   },
 
   {
-    id: 8,
+    id: 9,
     title: "BMI Calculator",
     description:
       "Calculate Body Mass Index instantly with health status results and responsive design.",
@@ -116,11 +147,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/bmi-calculator.png",
     live: "https://bmicalculatorapp-eight.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/2-BMICalculator",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/2-BMICalculator",
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Digital Clock",
     description:
       "A live digital clock displaying real-time hours, minutes, and seconds with a minimal UI.",
@@ -130,11 +162,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/digital-clock.png",
     live: "https://digital-time-blue.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/8-Digital-Clock",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/8-Digital-Clock",
   },
 
   {
-    id: 10,
+    id: 11,
     title: "Snap Slider",
     description:
       "An interactive image slider featuring smooth animations and responsive navigation controls.",
@@ -144,11 +177,12 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/image-slider.png",
     live: "https://snap-slider.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/9-Image-Slider",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/9-Image-Slider",
   },
 
   {
-    id: 11,
+    id: 12,
     title: "Theme Switcher",
     description:
       "Switch between multiple color themes instantly with persistent user preferences.",
@@ -158,7 +192,8 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/color-switcher.png",
     live: "https://theme-switcher-two-rust.vercel.app/",
-    github:"https://github.com/amit0526/java-script-projects/tree/main/1-Color-Switcher",
+    github:
+      "https://github.com/amit0526/java-script-projects/tree/main/1-Color-Switcher",
   },
 ];
 
