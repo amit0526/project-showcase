@@ -18,7 +18,7 @@ const projects = [
       "Responsive Design",
     ],
     tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
-    images: "/images/tech-flow-login.png",
+    image: "/images/tech-flow-dashboard.png",
     live: "https://tech-flow-steel.vercel.app/",
     github: "https://github.com/amit0526/TechFlow",
   },
